@@ -25,6 +25,12 @@
     <layout class="QGridLayout" name="gridLayout_4">
      <item row="0" column="1">
       <widget class="QLabel" name="mYMaxLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+       </property>
        <property name="text">
         <string>North</string>
        </property>
@@ -61,6 +67,12 @@ QLineEdit:hover{
      </item>
      <item row="2" column="1">
       <widget class="QLabel" name="mYMinLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+       </property>
        <property name="text">
         <string>South</string>
        </property>
@@ -117,6 +129,12 @@ QLineEdit:hover{
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="mXMinLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+       </property>
        <property name="text">
         <string>West</string>
        </property>
@@ -150,6 +168,12 @@ QLineEdit:hover{
      </item>
      <item row="1" column="2">
       <widget class="QLabel" name="mXMaxLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+       </property>
        <property name="text">
         <string>East</string>
        </property>

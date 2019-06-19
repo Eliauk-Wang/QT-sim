@@ -65,13 +65,13 @@ QTreeWidget::item:selected{
 }
 
 QScrollBar:horizontal{
-	background-color:#435770;
+	background-color:#2b394f;
 	height:12px;
 }
 
 QScrollBar::handle:horizontal{
 	margin:2px;
-	background-color:#384861;
+	background-color:#2f7196;
 }
 
 QScrollBar::add-line:horizontal{
@@ -89,7 +89,7 @@ QScrollBar::sub-line:horizontal{
 }
 
 QScrollBar:vertical{
-	background-color:#435770;
+	background-color:#2b394f;
 	width:12px;
 }
 
@@ -111,7 +111,7 @@ QScrollBar::sub-page:vertical{
 
 QScrollBar::handle:vertical{
 	margin:2px;
-	background-color:#384861;
+	background-color:#2f7196;
 }
 
 QScrollBar::add-line:vertical{
@@ -182,67 +182,67 @@ QListWidget::item:selected{
 }
 
 QScrollBar:horizontal{
-	background-color:#435770;
-	height:12px;
+background-color:#2b394f;
+height:12px;
 }
 
 QScrollBar::handle:horizontal{
-	margin:2px;
-	background-color:#384861;
+margin:2px;
+background-color:#2f7196;
 }
 
 QScrollBar::add-line:horizontal{
-	width:8px;
-	height:8px;
-	background-color:transparent;
-	subcontrol-position:right;
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:right;
 }
 
 QScrollBar::sub-line:horizontal{
-	width:8px;
-	height:8px;
-	background-color:transparent;
-	subcontrol-position:left;
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:left;
 }
 
 QScrollBar:vertical{
-	background-color:#435770;
-	width:12px;
+background-color:#2b394f;
+width:12px;
 }
 
 QScrollBar::add-page:horizontal{
-	background:transparent;
+background:transparent;
 }
 
 QScrollBar::sub-page:horizontal{
-	background:transparent;
+background:transparent;
 }
 
 QScrollBar::add-page:vertical{
-	background:transparent;
+background:transparent;
 }
 
 QScrollBar::sub-page:vertical{
-	background:transparent;
+background:transparent;
 }
 
 QScrollBar::handle:vertical{
-	margin:2px;
-	background-color:#384861;
+margin:2px;
+background-color:#2f7196;
 }
 
 QScrollBar::add-line:vertical{
-	width:8px;
-	height:8px;
-	background-color:transparent;
-	subcontrol-position:bottom;
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:bottom;
 }
 
 QScrollBar::sub-line:vertical{
-	width:8px;
-	height:8px;
-	background-color:transparent;
-	subcontrol-position:top;
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:top;
 }</string>
    </property>
    <item>

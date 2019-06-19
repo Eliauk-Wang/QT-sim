@@ -24,6 +24,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2">
      <item>
       <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+       </property>
        <property name="text">
         <string>real time</string>
        </property>
@@ -67,6 +73,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,2">
      <item>
       <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+       </property>
        <property name="text">
         <string>simulation time</string>
        </property>
@@ -129,6 +141,12 @@ QPushButton:pressed{
      </item>
      <item>
       <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+       </property>
        <property name="text">
         <string>simulation speed</string>
        </property>
@@ -241,6 +259,12 @@ QPushButton:pressed{
      </item>
      <item>
       <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+       </property>
        <property name="text">
         <string>mode</string>
        </property>

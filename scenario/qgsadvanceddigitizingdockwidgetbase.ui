@@ -72,6 +72,12 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+        </property>
         <property name="text">
          <string>Error</string>
         </property>
@@ -399,6 +405,12 @@ QToolButton:pressed{
             </property>
             <item row="3" column="1">
              <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+              </property>
               <property name="text">
                <string>y</string>
               </property>
@@ -634,6 +646,12 @@ QLineEdit:hover{
             </item>
             <item row="1" column="1">
              <widget class="QLabel" name="label_2">
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+              </property>
               <property name="text">
                <string>a</string>
               </property>
@@ -714,6 +732,12 @@ QLineEdit:hover{
             </item>
             <item row="2" column="1">
              <widget class="QLabel" name="label_3">
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+              </property>
               <property name="text">
                <string>x</string>
               </property>
@@ -721,6 +745,12 @@ QLineEdit:hover{
             </item>
             <item row="0" column="1">
              <widget class="QLabel" name="label">
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+	color:#ffffff;
+	background-color:transparent;
+}</string>
+              </property>
               <property name="text">
                <string>d</string>
               </property>
