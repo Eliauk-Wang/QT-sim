@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CSScenarioWidgetBase</class>
+ <widget class="QMainWindow" name="CSScenarioWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CQSim</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	color:#ffffff;
+	background-color:#4f647f;
+}
+
+QMenuBar{
+	color:#ffffff;
+	background-color:#4f647f;
+	border-bottom:1px solid #283444;
+}
+
+QMenuBar::item:selected{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+  
+QMenu::item {
+	color:#3c3c3c;
+	padding:6px 26px;
+	margin:0px 6px;
+ }
+  
+QMenu::item:selected { 
+	color:#ffffff;
+	background-color:#2887f1;
+ }
+
+QToolBar{
+	color: #ffffff;
+	background-color:#4f647f;
+	border-bottom:1px solid #283444;
+}
+
+QToolButton{
+	color:#ffffff;
+	border:0px;
+}
+
+QToolButton:hover{
+	color:#ffffff;
+	border:0px;
+	border-radius:2px;
+	background-color:#0f8dc8;
+}
+
+QToolButton:pressed{
+	color:#ffffff;	
+	border:0px;
+	background-color:#256081;
+}
+
+QToolBar::handle{
+	color:#ffffff;
+	width:6px;
+}
+
+QToolBar::item:selected{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QStatusBar{
+	color:#ffffff;
+	border-top:1px solid #2ba3e7;
+	background-color: #283444;
+}</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	color:#ffffff;
+	background-color:#4f647f;
+}</string>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>828</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>26</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menu_project_">
+    <property name="title">
+     <string>Project</string>
+    </property>
+    <addaction name="action_create_project_"/>
+    <addaction name="action_import_project_"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_view_">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="action_default__view_"/>
+    <addaction name="action_2D_situation_"/>
+    <addaction name="action3D_situation_"/>
+    <addaction name="action_system_log_"/>
+    <addaction name="action_model_log_"/>
+    <addaction name="action_evaluation_analysis_"/>
+    <addaction name="action_situation_monitor_"/>
+    <addaction name="action_simulation_control"/>
+    <addaction name="action_data_playback_"/>
+    <addaction name="action_resources_manager_"/>
+    <addaction name="action_simulation_information_"/>
+    <addaction name="actionPublish_Subscribe"/>
+    <addaction name="action_node_design"/>
+    <addaction name="actionNode_Assign"/>
+   </widget>
+   <widget class="QMenu" name="menu_modeling_tools_">
+    <property name="title">
+     <string>Modeling Tools</string>
+    </property>
+    <addaction name="action_pysical_modeling_"/>
+    <addaction name="action_behavioral_modeling_"/>
+    <addaction name="action_behavioral_assembly_tool_"/>
+    <addaction name="action_entity_assembly_tool_"/>
+   </widget>
+   <widget class="QMenu" name="menu_distributed_simulation_">
+    <property name="title">
+     <string>Distributed Simulation</string>
+    </property>
+    <addaction name="action_federal_design_"/>
+   </widget>
+   <widget class="QMenu" name="menu_test_tools_">
+    <property name="title">
+     <string>Test Tools</string>
+    </property>
+    <addaction name="action_system_test_"/>
+    <addaction name="action_database_test_tool_"/>
+   </widget>
+   <widget class="QMenu" name="menu_help_">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_view_help_"/>
+    <addaction name="action_register_"/>
+    <addaction name="action_support_"/>
+    <addaction name="action_about_"/>
+   </widget>
+   <addaction name="menu_project_"/>
+   <addaction name="menu_view_"/>
+   <addaction name="menu_modeling_tools_"/>
+   <addaction name="menu_distributed_simulation_"/>
+   <addaction name="menu_test_tools_"/>
+   <addaction name="menu_help_"/>
+  </widget>
+  <widget class="QStatusBar" name="status_bar_"/>
+  <widget class="QToolBar" name="map_toolbar_">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_pan_"/>
+   <addaction name="action_zoom_in_"/>
+   <addaction name="action_zoom_out_"/>
+   <addaction name="action_online_map_"/>
+   <addaction name="action_save_as_file"/>
+  </widget>
+  <widget class="QToolBar" name="layer_toolbar_">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>26</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_current_layer_"/>
+   <addaction name="action_add_feature_"/>
+   <addaction name="action_add_line_"/>
+   <addaction name="action_add_polygon_"/>
+   <addaction name="action_select_features_"/>
+   <addaction name="action_delete_selected_"/>
+  </widget>
+  <action name="action_create_project_">
+   <property name="text">
+    <string>Create Project</string>
+   </property>
+  </action>
+  <action name="action_import_project_">
+   <property name="text">
+    <string>Import Project</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_default__view_">
+   <property name="text">
+    <string>Default View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_2D_situation_">
+   <property name="text">
+    <string>2D Situation</string>
+   </property>
+  </action>
+  <action name="action3D_situation_">
+   <property name="text">
+    <string>3D Situation</string>
+   </property>
+  </action>
+  <action name="action_system_log_">
+   <property name="text">
+    <string>System Log</string>
+   </property>
+  </action>
+  <action name="action_model_log_">
+   <property name="text">
+    <string>Model Log</string>
+   </property>
+  </action>
+  <action name="action_evaluation_analysis_">
+   <property name="text">
+    <string>Evaluation And Analysis</string>
+   </property>
+  </action>
+  <action name="action_situation_monitor_">
+   <property name="text">
+    <string>Situation Monitor</string>
+   </property>
+  </action>
+  <action name="action_simulation_control">
+   <property name="text">
+    <string>Simulation Control</string>
+   </property>
+  </action>
+  <action name="action_data_playback_">
+   <property name="text">
+    <string>Data Playback</string>
+   </property>
+  </action>
+  <action name="action_resources_manager_">
+   <property name="text">
+    <string>Resources Manager</string>
+   </property>
+  </action>
+  <action name="action_simulation_information_">
+   <property name="text">
+    <string>Simulation Information</string>
+   </property>
+  </action>
+  <action name="action_pysical_modeling_">
+   <property name="text">
+    <string>Pysical Modeling Tool</string>
+   </property>
+  </action>
+  <action name="action_behavioral_modeling_">
+   <property name="text">
+    <string>Behavioral Modeling Tool</string>
+   </property>
+  </action>
+  <action name="action_behavioral_assembly_tool_">
+   <property name="text">
+    <string>Behavioral Assembly Tool</string>
+   </property>
+  </action>
+  <action name="action_entity_assembly_tool_">
+   <property name="text">
+    <string>Entity Assembly Tool</string>
+   </property>
+  </action>
+  <action name="action_federal_design_">
+   <property name="text">
+    <string>Federal Design</string>
+   </property>
+  </action>
+  <action name="action_system_test_">
+   <property name="text">
+    <string>System Test Tool</string>
+   </property>
+  </action>
+  <action name="action_database_test_tool_">
+   <property name="text">
+    <string>DataBase Test Tool</string>
+   </property>
+  </action>
+  <action name="action_view_help_">
+   <property name="text">
+    <string>View Help</string>
+   </property>
+  </action>
+  <action name="action_register_">
+   <property name="text">
+    <string>Register</string>
+   </property>
+  </action>
+  <action name="action_support_">
+   <property name="text">
+    <string>Support</string>
+   </property>
+  </action>
+  <action name="action_about_">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="action_pan_">
+   <property name="text">
+    <string>Pan</string>
+   </property>
+  </action>
+  <action name="action_zoom_in_">
+   <property name="text">
+    <string>ZoomIn</string>
+   </property>
+  </action>
+  <action name="action_zoom_out_">
+   <property name="text">
+    <string>ZoomOut</string>
+   </property>
+  </action>
+  <action name="action_add_line_">
+   <property name="text">
+    <string>AddLine</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_add_polygon_">
+   <property name="text">
+    <string>AddPolygon</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_select_features_">
+   <property name="text">
+    <string>SelectFeatures</string>
+   </property>
+  </action>
+  <action name="action_current_layer_">
+   <property name="text">
+    <string>CurrentLayer</string>
+   </property>
+  </action>
+  <action name="action_point_layer_">
+   <property name="text">
+    <string>point</string>
+   </property>
+   <property name="toolTip">
+    <string>point layer</string>
+   </property>
+  </action>
+  <action name="action_line_layer_">
+   <property name="text">
+    <string>line</string>
+   </property>
+   <property name="toolTip">
+    <string>line layer</string>
+   </property>
+  </action>
+  <action name="action_polygon_layer_">
+   <property name="text">
+    <string>polygon</string>
+   </property>
+   <property name="toolTip">
+    <string>polygon layer</string>
+   </property>
+  </action>
+  <action name="action_delete_selected_">
+   <property name="text">
+    <string>DeleteSelected</string>
+   </property>
+  </action>
+  <action name="action_add_feature_">
+   <property name="text">
+    <string>AddFeature</string>
+   </property>
+  </action>
+  <action name="action_online_map_">
+   <property name="text">
+    <string>OnlineMap</string>
+   </property>
+  </action>
+  <action name="action_save_as_file">
+   <property name="text">
+    <string>SaveAsFile</string>
+   </property>
+   <property name="toolTip">
+    <string>SaveAsFile</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionPublish_Subscribe">
+   <property name="text">
+    <string>Publish Subscribe</string>
+   </property>
+  </action>
+  <action name="action_node_design">
+   <property name="text">
+    <string>Node Design</string>
+   </property>
+  </action>
+  <action name="actionNode_Assign">
+   <property name="text">
+    <string>Node Assign</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

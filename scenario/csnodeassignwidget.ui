@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CSNodeAssignWidgetBase</class>
+ <widget class="QWidget" name="CSNodeAssignWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	color:#ffffff;
+	background-color:#4f647f;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="styleSheet">
+      <string notr="true">QTreeWidget{
+	background-color:#384861;
+	color:#ffffff;
+	border:1px solid #384861;
+}
+
+QHeaderView::section{
+	color:#ffffff;
+	background-color:#2f7196;
+	border:0px;
+	padding-left:6px;
+	border-left:1px solid #384861;
+	border-right:1px solid #384861;
+	border-bottom:2px solid #2ba3e7;
+	height:26px;
+}
+
+QTreeWidget::branch:closed:has-children {
+	image: url(:/images/TreeWidget_defult.png);
+}
+
+QTreeWidget::branch:open {
+	image: url(:/images/TreeWidget_pressed.png);
+}
+
+QTreeWidget::item:hover{
+	background-color:#2887f1;
+
+}
+
+QTreeWidget::item:selected{
+	color:white;
+	background-color:#71601b;
+}
+
+QScrollBar:horizontal{
+	background-color:#435770;
+	height:12px;
+}
+
+QScrollBar::handle:horizontal{
+	margin:2px;
+	background-color:#384861;
+}
+
+QScrollBar::add-line:horizontal{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+	background-color:#435770;
+	width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+	background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+	background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+	background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+	background:transparent;
+}
+
+QScrollBar::handle:vertical{
+	margin:2px;
+	background-color:#384861;
+}
+
+QScrollBar::add-line:vertical{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:top;
+}</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>PhysiNode</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>LogicalChildNodes</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Action</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>New Subitem</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>New Subitem</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>New Subitem</string>
+         </property>
+        </item>
+       </item>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>New Subitem</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>New Subitem</string>
+        </property>
+       </item>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>New Subitem</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>New Subitem</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>New Subitem</string>
+         </property>
+        </item>
+       </item>
+      </item>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btOK">
+       <property name="minimumSize">
+        <size>
+         <width>76</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color:#ffffff;
+	background-color:#2f7196;
+	border-top:1px solid #44aeea;
+	border-left:1px solid #44aeea;
+	border-bottom:1px solid #217cb1;
+	border-right:1px solid #217cb1;
+}
+
+QPushButton:hover{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background-color:#256081;
+	border:1px solid #44aeea;	
+}</string>
+       </property>
+       <property name="text">
+        <string>OK</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btCancel">
+       <property name="minimumSize">
+        <size>
+         <width>76</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color:#ffffff;
+	background-color:#2f7196;
+	border-top:1px solid #44aeea;
+	border-left:1px solid #44aeea;
+	border-bottom:1px solid #217cb1;
+	border-right:1px solid #217cb1;
+}
+
+QPushButton:hover{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background-color:#256081;
+	border:1px solid #44aeea;	
+}</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="ui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

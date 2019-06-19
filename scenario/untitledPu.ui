@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>946</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	color:#ffffff;
+	background-color:#4f647f;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane{
+	color:#ffffff;
+	border-width:0px; 
+	background:transparent;
+	left:-9px;
+	top:-9px;
+} 
+
+QTabBar::tab{
+	background-color:#045b79;
+	color:white;
+	width:60;
+}
+
+QTabBar::tab:selected{
+	color:#ffffff;
+	background-color:#029eba;
+}
+
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="widget">
+      <property name="styleSheet">
+       <string notr="true">QTabWIdget{
+border:0px;
+}</string>
+      </property>
+      <attribute name="title">
+       <string>主题</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="CSForceGroupTreeWidgetBase" name="srcTreeWidget">
+           <property name="styleSheet">
+            <string notr="true">QTreeWidget{
+	background-color:#384861;
+	color:#ffffff;
+	border:1px solid #384861;
+}
+
+QHeaderView::section{
+	color:#ffffff;
+	background-color:#2f7196;
+	border:0px;
+	padding-left:6px;
+	border-left:1px solid #384861;
+	border-right:1px solid #384861;
+	border-bottom:2px solid #2ba3e7;
+	height:26px;
+}
+
+QTreeWidget::branch:closed:has-children {
+	image: url(:/images/TreeWidget_defult.png);
+}
+
+QTreeWidget::branch:open {
+	image: url(:/images/TreeWidget_pressed.png);
+}
+
+QTreeWidget::item:hover{
+	background-color:#2887f1;
+
+}
+
+QTreeWidget::item:selected{
+	color:white;
+	background-color:#71601b;
+}
+
+QScrollBar:horizontal{
+	background-color:#2b394f;
+	height:12px;
+}
+
+QScrollBar::handle:horizontal{
+	margin:2px;
+	background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+	background-color:#2b394f;
+	width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+	background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+	background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+	background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+	background:transparent;
+}
+
+QScrollBar::handle:vertical{
+	margin:2px;
+	background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:top;
+}</string>
+           </property>
+           <column>
+            <property name="text">
+             <string notr="true">1</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>新建列</string>
+            </property>
+           </column>
+           <item>
+            <property name="text">
+             <string>F-22</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>S-30</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="srcListWidget">
+           <property name="styleSheet">
+            <string notr="true">QListWidget{
+	background-color:#384861;
+	color:#ffffff;
+	border:1px solid #384861;
+}
+
+
+QListWidget::item:hover{
+	background-color:#2887f1;
+
+}
+
+QListWidget::item:selected{
+	color:white;
+	background-color:#71601b;
+}
+
+QScrollBar:horizontal{
+background-color:#2b394f;
+height:12px;
+}
+
+QScrollBar::handle:horizontal{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+background-color:#2b394f;
+width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+background:transparent;
+}
+
+QScrollBar::handle:vertical{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:top;
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>位置</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>载弹量</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QListWidget" name="listWidget">
+           <property name="styleSheet">
+            <string notr="true">QListWidget{
+	background-color:#384861;
+	color:#ffffff;
+	border:1px solid #384861;
+}
+
+QListWidget::item:hover{
+	background-color:#2887f1;
+}
+
+QListWidget::item:selected{
+	color:white;
+	background-color:#71601b;
+}
+
+QScrollBar:horizontal{
+	background-color:#2b394f;
+	height:12px;
+}
+
+QScrollBar::handle:horizontal{
+	margin:2px;
+	background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+	background-color:#2b394f;
+	width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+	background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+	background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+	background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+	background:transparent;
+}
+
+QScrollBar::handle:vertical{
+	margin:2px;
+	background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:top;
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Position</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Type</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>26</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color:#ffffff;
+	background-color:#2f7196;
+	border-top:1px solid #44aeea;
+	border-left:1px solid #44aeea;
+	border-bottom:1px solid #217cb1;
+	border-right:1px solid #217cb1;
+}
+
+QPushButton:hover{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background-color:#256081;
+	border:1px solid #44aeea;	
+}</string>
+             </property>
+             <property name="text">
+              <string>添加主题</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>26</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color:#ffffff;
+	background-color:#2f7196;
+	border-top:1px solid #44aeea;
+	border-left:1px solid #44aeea;
+	border-bottom:1px solid #217cb1;
+	border-right:1px solid #217cb1;
+}
+
+QPushButton:hover{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background-color:#256081;
+	border:1px solid #44aeea;	
+}</string>
+             </property>
+             <property name="text">
+              <string>删除主题</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="styleSheet">
+          <string notr="true">QTableWidget{
+	color:#ffffff;
+	border:1px solid #384861;
+	background-color:#384861;
+	alternate-background-color:#415573;
+}
+
+QTableView QHeaderView::section{
+	color:#ffffff;
+	background-color:#2f7196;
+	border:0px;
+	padding-left:6px;
+	border-left:1px solid #384861;
+	border-right:1px solid #384861;
+	border-bottom:2px solid #2ba3e7;
+	height:26px;
+}
+
+QScrollBar:horizontal{
+	background-color:#2b394f;
+	height:12px;
+}
+
+QScrollBar::handle:horizontal{
+	margin:2px;
+	background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+	background-color:#2b394f;
+	width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+	background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+	background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+	background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+	background:transparent;
+}
+
+QScrollBar::handle:vertical{
+	margin:2px;
+	background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+	width:8px;
+	height:8px;
+	background-color:transparent;
+	subcontrol-position:top;
+}
+
+QTableWidget::Item{
+	border:0px;
+}
+
+QTableWidget::Item:hover{
+	color:#ffffff;
+	border:0px;
+	background-color:#2887f1;
+}
+
+QTableWidget::Item:selected{
+	color:#ffffff;
+	border:0px;
+	background-color:#2887f1;
+}
+
+</string>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="rowCount">
+          <number>10</number>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column>
+          <property name="text">
+           <string>类型</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>属性</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>发布/订阅</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>F-22</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>位置</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>发布</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>S-30</string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>载弹量</string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string>订阅</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <attribute name="title">
+       <string>发布</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="CSForceGroupTreeWidgetBase" name="srcTreeWidget_2">
+           <property name="styleSheet">
+            <string notr="true">QTreeWidget{
+	background-color:#384861;
+	color:#ffffff;
+	border:1px solid #384861;
+}
+
+QHeaderView::section{
+	color:#ffffff;
+	background-color:#2f7196;
+	border:0px;
+	padding-left:6px;
+	border-left:1px solid #384861;
+	border-right:1px solid #384861;
+	border-bottom:2px solid #2ba3e7;
+	height:26px;
+}
+
+QTreeWidget::branch:closed:has-children {
+	image: url(:/images/TreeWidget_defult.png);
+}
+
+QTreeWidget::branch:open {
+	image: url(:/images/TreeWidget_pressed.png);
+}
+
+QTreeWidget::item:hover{
+	background-color:#2887f1;
+
+}
+
+QTreeWidget::item:selected{
+	color:white;
+	background-color:#71601b;
+}
+
+QScrollBar:horizontal{
+background-color:#2b394f;
+height:12px;
+}
+
+QScrollBar::handle:horizontal{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+background-color:#2b394f;
+width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+background:transparent;
+}
+
+QScrollBar::handle:vertical{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:top;
+}</string>
+           </property>
+           <column>
+            <property name="text">
+             <string notr="true">1</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>新建列</string>
+            </property>
+           </column>
+           <item>
+            <property name="text">
+             <string>F-22</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>S-30</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="srcListWidget_2">
+           <property name="styleSheet">
+            <string notr="true">QListWidget{
+	background-color:#384861;
+	color:#ffffff;
+	border:1px solid #384861;
+}
+
+
+QListWidget::item:hover{
+	background-color:#2887f1;
+
+}
+
+QListWidget::item:selected{
+	color:white;
+	background-color:#71601b;
+}
+
+QScrollBar:horizontal{
+background-color:#2b394f;
+height:12px;
+}
+
+QScrollBar::handle:horizontal{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+background-color:#2b394f;
+width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+background:transparent;
+}
+
+QScrollBar::handle:vertical{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:top;
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>位置</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>载弹量</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>26</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	color:#ffffff;
+	background-color:#384861;
+	border:0px;
+}
+
+QComboBox:hover{
+	color:#ffffff;
+	background-color:#384861;
+	border:1px solid #63bbff;
+}
+
+QComboBox::down-arrow{	
+	image: url(:/images/down_arrow.png);
+	background-color:transparent;
+}
+
+QComboBox::drop-down{
+	border:0px;
+	width:26px;
+	background-color:transparent;
+}
+
+QComboBox::drop-down:hover {
+	color:white;
+	border:0px;
+	width:26px;
+    background-color:transparent;
+}
+
+QComboBox QAbstractItemView {
+	color:#3c3c3c;
+	outline:none;
+	border:1px solid #63bbff;
+    background-color:#f6fafb;
+}
+
+QComboBox QAbstractItemView::item {
+	outline:none;
+	height:26px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+	color:white;
+	outline:none;
+	height:26px;
+    background-color:#63bbff;	
+}
+QComboBox QAbstractItemView::item:selected {
+	outline:none;
+	border:0px;
+	height:26px;
+	color:#63bbff;
+ 	outline:none;
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Postion</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ForceSide</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Type</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget_2">
+           <property name="styleSheet">
+            <string notr="true">QTableWidget{
+color:#ffffff;
+border:1px solid #384861;
+background-color:#384861;
+alternate-background-color:#e0e5e8;
+}
+
+QTableView QHeaderView::section{
+	color:#ffffff;
+	background-color:#2f7196;
+	border:0px;
+	padding-left:6px;
+	border-left:1px solid #384861;
+	border-right:1px solid #384861;
+	border-bottom:2px solid #2ba3e7;
+	height:26px;
+}
+
+QScrollBar:horizontal{
+background-color:#2b394f;
+height:12px;
+}
+
+QScrollBar::handle:horizontal{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+background-color:#2b394f;
+width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+background:transparent;
+}
+
+QScrollBar::handle:vertical{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:top;
+}
+
+QTableWidget::Item{
+border:0px;
+}
+
+QTableWidget::Item:hover{
+color:#ffffff;
+border:0px;
+background-color:#2887f1;
+}
+
+QTableWidget::Item:selected{
+color:#ffffff;
+border:0px;
+background-color:#2887f1;
+}
+
+</string>
+           </property>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>类型</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>属性</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>F-22</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>位置</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="bt_src_add">
+             <property name="minimumSize">
+              <size>
+               <width>76</width>
+               <height>26</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color:#ffffff;
+	background-color:#2f7196;
+	border-top:1px solid #44aeea;
+	border-left:1px solid #44aeea;
+	border-bottom:1px solid #217cb1;
+	border-right:1px solid #217cb1;
+}
+
+QPushButton:hover{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background-color:#256081;
+	border:1px solid #44aeea;	
+}</string>
+             </property>
+             <property name="text">
+              <string>发布</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="bt_src_delete">
+             <property name="minimumSize">
+              <size>
+               <width>76</width>
+               <height>26</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color:#ffffff;
+	background-color:#2f7196;
+	border-top:1px solid #44aeea;
+	border-left:1px solid #44aeea;
+	border-bottom:1px solid #217cb1;
+	border-right:1px solid #217cb1;
+}
+
+QPushButton:hover{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background-color:#256081;
+	border:1px solid #44aeea;	
+}</string>
+             </property>
+             <property name="text">
+              <string>删除</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>订阅</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="CSForceGroupTreeWidgetBase" name="srcTreeWidget_3">
+           <property name="styleSheet">
+            <string notr="true">QTreeWidget{
+	background-color:#384861;
+	color:#ffffff;
+	border:1px solid #384861;
+}
+
+QHeaderView::section{
+	color:#ffffff;
+	background-color:#2f7196;
+	border:0px;
+	padding-left:6px;
+	border-left:1px solid #384861;
+	border-right:1px solid #384861;
+	border-bottom:2px solid #2ba3e7;
+	height:26px;
+}
+
+QTreeWidget::branch:closed:has-children {
+	image: url(:/images/TreeWidget_defult.png);
+}
+
+QTreeWidget::branch:open {
+	image: url(:/images/TreeWidget_pressed.png);
+}
+
+QTreeWidget::item:hover{
+	background-color:#2887f1;
+
+}
+
+QTreeWidget::item:selected{
+	color:white;
+	background-color:#71601b;
+}
+
+QScrollBar:horizontal{
+background-color:#2b394f;
+height:12px;
+}
+
+QScrollBar::handle:horizontal{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+background-color:#2b394f;
+width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+background:transparent;
+}
+
+QScrollBar::handle:vertical{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:top;
+}</string>
+           </property>
+           <column>
+            <property name="text">
+             <string notr="true">1</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>新建列</string>
+            </property>
+           </column>
+           <item>
+            <property name="text">
+             <string>F-22</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>S-30</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="srcListWidget_3">
+           <property name="styleSheet">
+            <string notr="true">QListWidget{
+	background-color:#384861;
+	color:#ffffff;
+	border:1px solid #384861;
+}
+
+
+QListWidget::item:hover{
+	background-color:#2887f1;
+
+}
+
+QListWidget::item:selected{
+	color:white;
+	background-color:#71601b;
+}
+
+QScrollBar:horizontal{
+background-color:#2b394f;
+height:12px;
+}
+
+QScrollBar::handle:horizontal{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+background-color:#2b394f;
+width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+background:transparent;
+}
+
+QScrollBar::handle:vertical{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:top;
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>位置</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>载弹量</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QComboBox" name="comboBox_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>26</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	color:#ffffff;
+	background-color:#384861;
+	border:0px;
+}
+
+QComboBox:hover{
+	color:#ffffff;
+	background-color:#384861;
+	border:1px solid #63bbff;
+}
+
+QComboBox::down-arrow{	
+	image: url(:/images/down_arrow.png);
+	background-color:transparent;
+}
+
+QComboBox::drop-down{
+	border:0px;
+	width:26px;
+	background-color:transparent;
+}
+
+QComboBox::drop-down:hover {
+	color:white;
+	border:0px;
+	width:26px;
+    background-color:transparent;
+}
+
+QComboBox QAbstractItemView {
+	color:#3c3c3c;
+	outline:none;
+	border:1px solid #63bbff;
+    background-color:#f6fafb;
+}
+
+QComboBox QAbstractItemView::item {
+	outline:none;
+	height:26px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+	color:white;
+	outline:none;
+	height:26px;
+    background-color:#63bbff;	
+}
+QComboBox QAbstractItemView::item:selected {
+	outline:none;
+	border:0px;
+	height:26px;
+	color:#63bbff;
+ 	outline:none;
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Postion</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ForceSide</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Type</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget_3">
+           <property name="styleSheet">
+            <string notr="true">QTableWidget{
+color:#ffffff;
+border:1px solid #384861;
+background-color:#384861;
+alternate-background-color:#e0e5e8;
+}
+
+QTableView QHeaderView::section{
+	color:#ffffff;
+	background-color:#2f7196;
+	border:0px;
+	padding-left:6px;
+	border-left:1px solid #384861;
+	border-right:1px solid #384861;
+	border-bottom:2px solid #2ba3e7;
+	height:26px;
+}
+
+QTableWidget::Item{
+border:0px;
+}
+
+QTableWidget::Item:hover{
+color:#ffffff;
+border:0px;
+background-color:#2887f1;
+}
+
+QTableWidget::Item:selected{
+color:#ffffff;
+border:0px;
+background-color:#2887f1;
+}
+
+QScrollBar:horizontal{
+background-color:#2b394f;
+height:12px;
+}
+
+QScrollBar::handle:horizontal{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:right;
+}
+
+QScrollBar::sub-line:horizontal{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:left;
+}
+
+QScrollBar:vertical{
+background-color:#2b394f;
+width:12px;
+}
+
+QScrollBar::add-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::sub-page:horizontal{
+background:transparent;
+}
+
+QScrollBar::add-page:vertical{
+background:transparent;
+}
+
+QScrollBar::sub-page:vertical{
+background:transparent;
+}
+
+QScrollBar::handle:vertical{
+margin:2px;
+background-color:#2f7196;
+}
+
+QScrollBar::add-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:bottom;
+}
+
+QScrollBar::sub-line:vertical{
+width:8px;
+height:8px;
+background-color:transparent;
+subcontrol-position:top;
+}
+
+</string>
+           </property>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>类型</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>属性</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>F-22</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>位置</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QPushButton" name="bt_src_add_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>26</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color:#ffffff;
+	background-color:#2f7196;
+	border-top:1px solid #44aeea;
+	border-left:1px solid #44aeea;
+	border-bottom:1px solid #217cb1;
+	border-right:1px solid #217cb1;
+}
+
+QPushButton:hover{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background-color:#256081;
+	border:1px solid #44aeea;	
+}</string>
+             </property>
+             <property name="text">
+              <string>订阅</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="bt_src_delete_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>26</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color:#ffffff;
+	background-color:#2f7196;
+	border-top:1px solid #44aeea;
+	border-left:1px solid #44aeea;
+	border-bottom:1px solid #217cb1;
+	border-right:1px solid #217cb1;
+}
+
+QPushButton:hover{
+	color:#ffffff;
+	background-color:#0f8dc8;
+}
+
+QPushButton:pressed{
+	color:#ffffff;
+	background-color:#256081;
+	border:1px solid #44aeea;	
+}</string>
+             </property>
+             <property name="text">
+              <string>删除</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CSForceGroupTreeWidgetBase</class>
+   <extends>QTreeWidget</extends>
+   <header>csforcegrouptreewidgetbase.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="ui.qrc"/>
+ </resources>
+ <connections/>
+</ui>
